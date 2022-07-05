@@ -26,7 +26,17 @@ This should returns a Boolean value indicating whether the provided objects spat
 - virtualenv >= v16.7.7
 - pip >= 19.2.3
 
-## Step-up
+## Summary of Files
+
+|Folder|Descriptions|
+|---|---|
+|/|Code related to coding-challenge repository|
+|/coding-challenge/app/|Code related to the all resources of the RestApi application|
+|/coding-challenge/config.py|Code related to the all resources of the RestApi application|
+|/coding-challenge/requirements.txt|Dependencies required to set up and run the application|
+|/coding-challenge/run.py|Lambda function code that comparse two GeoJSON objects|
+
+## Deployment Steps
 
 To install all the required dependencies to run Flask and the API, you will need to run the following command to import all the required libraries:
 
