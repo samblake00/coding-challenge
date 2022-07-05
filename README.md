@@ -23,10 +23,10 @@ Guidance:
 • We're not looking for perfection, but rather a framework to hold a discussion about your thoughts on design, implementation, library selection, etc...
 • If you're taking more time than expected: add skeleton code, comments, etc... to support that discussion.
 
-##Prerequisites
+## Prerequisites
 Python >= 3.6
 virtualenv >= v16.7.7
 pip >= 19.2.3
 
-##Step-up
+## Step-up
 
