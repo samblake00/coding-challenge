@@ -37,9 +37,9 @@ This should returns a Boolean value indicating whether the provided objects spat
 |/coding-challenge/run.py|Lambda function code that comparse two GeoJSON objects|
 
 ## Deployment Steps
-1. Clone this repository using the following command:
+1. Clone this repository to your local machine using the following command:
  ```sh
-git clone 
+git clone https://github.com/samblake00/coding-challenge.git
  ```
 
 To install all the required dependencies to run Flask and the API, you will need to run the following command to import all the required libraries:
