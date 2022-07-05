@@ -32,9 +32,9 @@ This should returns a Boolean value indicating whether the provided objects spat
 |---|---|
 |/|Code related to coding-challenge repository|
 |/coding-challenge/app/|Code related to the all resources of the RestApi application|
-|/coding-challenge/config.py|Code related to the all resources of the RestApi application|
+|/coding-challenge/config.py|Configuration file for Swagger UI Interface|
 |/coding-challenge/requirements.txt|Dependencies required to set up and run the application|
-|/coding-challenge/run.py|Lambda function code that comparse two GeoJSON objects|
+|/coding-challenge/run.py|Python file to deploy the application to your local machine|
 
 ## Deployment Steps
 1. Clone this repository to your local machine using the following command:
