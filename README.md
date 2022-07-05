@@ -1,4 +1,4 @@
-# Flask REST API
+# Flask REST API Challenge
 
 This repository stores the code for the coding challenge prompted by Maxar. The current repository stores the necessary files to get started and run a basic REST API Development of Flask. 
 
@@ -22,3 +22,11 @@ Guidance:
 • This should take less than 4 hrs to complete (although, you can take up to a week to send back your solution)
 • We're not looking for perfection, but rather a framework to hold a discussion about your thoughts on design, implementation, library selection, etc...
 • If you're taking more time than expected: add skeleton code, comments, etc... to support that discussion.
+
+##Prerequisites
+Python >= 3.6
+virtualenv >= v16.7.7
+pip >= 19.2.3
+
+##Step-up
+
