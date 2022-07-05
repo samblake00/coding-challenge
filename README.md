@@ -13,10 +13,10 @@ This should returns a Boolean value indicating whether the provided objects spat
 - Include relevant documentation for the running and testing of the application.
 
 ### Note:
--Try and write the application in Python if possible and use open source libraries to your advantage!
+- Try and write the application in Python if possible and use open source libraries to your advantage!
 - It’s ok if you are unable to complete the challenge, but at minimum be prepared to discuss possible implementation steps during onsite interview.
 
-Guidance:
+### Guidance:
 - This should take less than 4 hrs to complete (although, you can take up to a week to send back your solution)
 - We're not looking for perfection, but rather a framework to hold a discussion about your thoughts on design, implementation, library selection, etc...
 - If you're taking more time than expected: add skeleton code, comments, etc... to support that discussion.
