@@ -33,5 +33,5 @@ pip >= 19.2.3
 To install all the required dependencies to run Flask and the API, you will need to run the following command to import all the required libraries:
 
  ```sh
-requirements.txt
+pip install -r requirements.txt
  ```
