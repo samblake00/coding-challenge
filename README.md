@@ -54,7 +54,7 @@ pip install -r requirements.txt
 python run.py
  ```
 
-4. Once run.py has successfully deployed, navigate to http://127.0.0.1:4000/api/v1. <strong>Note<strong> http://127.0.0.1:4000 is the landing page only.
+4. Once run.py has successfully deployed, navigate to http://127.0.0.1:4000/api/v1. <strong>Note:</strong> http://127.0.0.1:4000 is the landing page only.
 
 5. Here you will find a geoapi with a POST method with the following path: /geoapi/polygon/intersect/. Click the Try it out button and copy and paste a GeoJSON example from either the trueexample or falseexample files. 
 
