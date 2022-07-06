@@ -5,21 +5,22 @@ RESTful API GeoAPI resources
 --------------------------
 """
 
-from functools import partial
-from http import HTTPStatus
-
-import geopy.distance
-import pyproj
-from app.modules.geoapi import GeoApiNamespace
-from flask import request
+from flask import request, jsonify
 from flask_restplus import Namespace, Resource, abort
 from flask_restplus import fields
 from http import HTTPStatus
-from shapely.geometry import Polygon
-
+from shapely.geometry import Polygon, shape
 from app.modules.geoapi import GeoApiNamespace
 
+
 api = Namespace('geoapi', description=GeoApiNamespace.description)
+
+bounding_box = api.model('BoundingBox', {
+    'x_lat': fields.Float(),
+    'y_lat': fields.Float(),
+    'x_lng': fields.Float(),
+    'y_lng': fields.Float(),
+})
 
 # API modules
 polygon = api.model('PolygonGeometry', {
@@ -35,11 +36,11 @@ polygon_feature = api.model('PolygonFeature', {
 })
 
 polygon_collection = api.model('FeatureCollection', {
-    'type': fields.String(default="Features", require=True),
+    'type': fields.String(default="FeatureCollection", require=True),
     'features': fields.Nested(polygon_feature, required=True)
 })
 
-#API POST Method
+#API POST method and route
 @api.route('/polygon/intersect/')
 class PolygonIntersect(Resource):
     """
@@ -55,13 +56,31 @@ class PolygonIntersect(Resource):
         try:
             #geojson payload to json format
             data = request.get_json()
+            # print(data)
 
-            #polygons being evaluated for intersection
-            poly1 = Polygon(data['features'][0]['geometry']['coordinates'])
-            poly2 = Polygon(data['features'][1]['geometry']['coordinates'])
+            # Get features from JSON request
+            poly1 = data['features'][0]
+            poly2 = data['features'][1]
 
-            #print boolean result
-            print(poly1.intersects(poly2))
+            # Get geometries from features
+            pol1 = poly1['geometry']
+            pol2 = poly2['geometry']
+
+            # Parse coordinates from features
+            # coords1 = poly1['geometry']['coordinates']
+            # coords2 = poly2['geometry']['coordinates']
+
+            # Convert the geometries to the appropriate format (tuple)
+            Polygon1 = shape(pol1)
+            Polygon2 = shape(pol2)
+
+            # Perform intersection analysis
+            result = Polygon1.intersects(Polygon2)
+            print(result)
+
+            # Print boolean result
+            return jsonify({'Result' : result})
+            # return print(Polygon1.intersects(Polygon2))
         except Exception as err:
             abort(HTTPStatus.UNPROCESSABLE_ENTITY, message="The GeoJSON polygon couldn't be processed.", error=err)
 
