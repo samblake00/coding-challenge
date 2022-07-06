@@ -41,16 +41,17 @@ This should returns a Boolean value indicating whether the provided objects spat
  ```sh
 git clone https://github.com/samblake00/coding-challenge.git
  ```
-
-Navigate to the directory where the the file is saved. To install all the required dependencies to run Flask and the API, you will need to run the following command to import all the required libraries:
+ 
+2. Navigate to the directory where the the file is saved. To install all the required dependencies to run Flask and the API, you will need to run the following command to import all the required libraries:
 
  ```sh
 pip install -r requirements.txt
  ```
+ 
+3. Open the project and navigate to coding-challenge/run.py
 
-Open the project and navigate to coding-challenge/run.py
+4. Once run.py has successfully deployed, navigate to http://127.0.0.1:4000/api/v1
 
-Once run.py has successfully deployed, navigate to http://127.0.0.1:4000/api/v1
+5. Here you will find a geoapi with a POST method with the following path: /geoapi/polygon/intersect/. Click the Try it out button and copy and paste a GeoJSON example from either the trueexample or falseexample files. 
 
-Here you will find a geoapi with a POST method with the following path /geoapi/polygon/intersect/
-
+6. Result will appear in the response body.
