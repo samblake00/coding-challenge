@@ -48,7 +48,7 @@ git clone https://github.com/samblake00/coding-challenge.git
 pip install -r requirements.txt
  ```
  
-3. Open the project and navigate to coding-challenge/run.py. This can also be done on the command line with the following command:
+3. Open the project and navigate to coding-challenge/run.py. Run this file. This can also be done on the command line with the following command:
  
  ```sh
 python run.py
