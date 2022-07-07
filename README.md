@@ -58,4 +58,4 @@ python run.py
 
 5. Here you will find a geoapi with a POST method with the following path: /geoapi/polygon/intersect/. Click the Try it out button and copy and paste a GeoJSON example from either the trueexample or falseexample files. 
 
-6. Result will appear in the response body. You may also paste your own GeoJSON examples in payload.
+6. Result will appear in the response body. You may also paste your own GeoJSON examples in the payload.
